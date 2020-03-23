@@ -317,23 +317,23 @@ import GoogleCast
     
     internal func createAdBreaksAndClips() {
         
-        guard let adTagURL = self.adTagURL else {
-            return
-        }
+        //guard let adTagURL = self.adTagURL else {
+        //    return
+        //}
         
-        let adBreakClipId = UUID().uuidString
-        let adBreakId = UUID().uuidString
+        //let adBreakClipId = UUID().uuidString
+        //let adBreakId = UUID().uuidString
         
-        let adBreakInfo = GCKAdBreakInfo(playbackPosition: 0)
-        adBreakInfo.setValue(adBreakId, forKey: "adBreakID")
-        adBreakInfo.setValue([adBreakClipId], forKey: "adBreakClipIDs")
-        self.adBreaks = [adBreakInfo]
+        //let adBreakInfo = GCKAdBreakInfo(playbackPosition: 0)
+        //adBreakInfo.setValue(adBreakId, forKey: "adBreakID")
+        //adBreakInfo.setValue([adBreakClipId], forKey: "adBreakClipIDs")
+        //self.adBreaks = [adBreakInfo]
         
-        let adBreakClipInfo = GCKAdBreakClipInfo()
-        adBreakClipInfo.setValue(adBreakClipId, forKey: "adBreakClipID")
-        let adBreakClipVastAdsRequest = GCKAdBreakClipVastAdsRequest()
-        adBreakClipVastAdsRequest.setValue(NSURL(string: adTagURL), forKey: "adTagUrl")
-        adBreakClipInfo.setValue(adBreakClipVastAdsRequest, forKey: "vastAdsRequest")
-        self.adBreakClips = [adBreakClipInfo]
+        //let adBreakClipInfo = GCKAdBreakClipInfo()
+        //adBreakClipInfo.setValue(adBreakClipId, forKey: "adBreakClipID")
+        //let adBreakClipVastAdsRequest = GCKAdBreakClipVastAdsRequest()
+        //adBreakClipVastAdsRequest.setValue(NSURL(string: adTagURL), forKey: "adTagUrl")
+        //adBreakClipInfo.setValue(adBreakClipVastAdsRequest, forKey: "vastAdsRequest")
+        //self.adBreakClips = [adBreakClipInfo]
     }
 }
